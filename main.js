@@ -53,6 +53,23 @@ $(document).ready(function(){
       $(".images img.last").addClass("active");
     }
   )
+  $(".nav i").click(
+    function(){
+    var itemsImmagini = $(".images img");
+    var itemsPallini = $(".nav i");
+    itemsImmagini.removeClass("active");
+    itemsPallini.removeClass("active");
+    var selezione = $(this);
+    selezione.addClass("active");
+    selezione.index();
+    //console log che restituisce l'indice item
+    console.log(selezione.index());
+    itemsImmagini.eq(selezione.index()).addClass("active");
+    //console log che restituisce la correlazione pallini /immagini
+    console.log(itemsImmagini.eq(selezione.index()));
+    }
+  )
+
 
 
 });
