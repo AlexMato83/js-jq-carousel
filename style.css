@@ -6,25 +6,37 @@
 }
 /*regole blocco slider*/
 .slider-wrapper {
+  height: 80vh;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
 }
+/*regole immagini*/
 .images {
   width: 80%;
-  height: 100vh;
+  height: 100%;
 }
 .images img {
   width: 100%;
+  height: 100%;
   display: none;
 }
+
+/*regole navigazione*/
 .nav {
-  display: none;
+  position: absolute;
+  bottom:120px;
+  left:45%;
+}
+
+.prev i, .next i {
+  font-size: -webkit-xxx-large;
 }
 .images img.active {
   display: inline-block;
 }
-.prev i, .next i {
-  font-size: -webkit-xxx-large;
+.nav i.active {
+  color:red;
 }
