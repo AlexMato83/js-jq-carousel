@@ -1,0 +1,30 @@
+/*regole generali*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/*regole blocco slider*/
+.slider-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.images {
+  width: 80%;
+  height: 100vh;
+}
+.images img {
+  width: 100%;
+  display: none;
+}
+.nav {
+  display: none;
+}
+.images img.active {
+  display: inline-block;
+}
+.prev i, .next i {
+  font-size: -webkit-xxx-large;
+}
