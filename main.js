@@ -43,28 +43,16 @@ $(document).ready(function(){
      pallinoActive.prev().addClass("active");
     }
   }
+  $(".nav i.first").click(
+    function(){
+      $(".images img.first").addClass("active");
+    }
+  )
+  $(".nav i.last").click(
+    function(){
+      $(".images img.last").addClass("active");
+    }
+  )
+
 
 });
-
-
-
-
-
-// $(document).ready(function(){
-//
-//
-//
-//
-//   //gestione click sul next
-//   $(".next").click(
-//     nextImg;
-//   );
-//
-//   function nextImg(){
-//     var image = $(".images img.active");
-//
-//     $(".images img").removeClass("active");
-//     $(".images img").next().addClass("active");
-//   }
-//
-// });
