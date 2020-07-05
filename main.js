@@ -55,18 +55,23 @@ $(document).ready(function(){
   )
   $(".nav i").click(
     function(){
+    // seleziono immagini e pallini
     var itemsImmagini = $(".images img");
     var itemsPallini = $(".nav i");
+    // rimuovo il display block alle immagini
     itemsImmagini.removeClass("active");
+    // rimuovo il rosso ai pallini
     itemsPallini.removeClass("active");
+    // salvo il pallino cliccato
     var selezione = $(this);
+    // lo coloro di rosso
     selezione.addClass("active");
+    // seleziono l'indice del pallino cliccato
     selezione.index();
     //console log che restituisce l'indice item
     console.log(selezione.index());
+    // l'immagine con l'indice equivalente al pallino selezionato diventa attiva
     itemsImmagini.eq(selezione.index()).addClass("active");
-    //console log che restituisce la correlazione pallini /immagini
-    console.log(itemsImmagini.eq(selezione.index()));
     }
   )
 
